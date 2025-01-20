@@ -61,6 +61,8 @@ program
     .option('--cookie-jar <path>', 'Specify the path to a custom cookie jar (serialized tough-cookie JSON) ')
     .option('--export-cookie-jar <path>', 'Exports the cookie jar to a file after completing the run')
     .option('--verbose', 'Show detailed information of collection run and each request sent')
+    .option('--packagesDirectory <path>', 'Specify the directory to load dynamic modules from')
+    .option('--packagesPrefix <prefix>', 'Specify the prefix to use for dynamic modules')
     .action((collection, command) => {
         let options = util.commanderToObject(command),
 
